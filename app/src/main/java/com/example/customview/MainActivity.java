@@ -15,6 +15,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements Progress.ProgressCallback {
 
+    /*Inspiration : https://creativemarket.com/CreativeForm/1624699-Music-UIUX-Mobile-App-Kit?u=Perfect-Design */
 
     private Handler mHandler;
     private boolean callbackHandler = false;
@@ -45,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements Progress.Progress
         mp = new MediaPlayer();
 
         try {
-            AssetFileDescriptor descriptor = getAssets().openFd("videoplayback.mp3");
+            /* Music : https://www.auboutdufil.com/index.php?id=504*/
+            AssetFileDescriptor descriptor = getAssets().openFd("Meydn.mp3");
             mp.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
             descriptor.close();
 

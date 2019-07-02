@@ -7,12 +7,33 @@
     tools:context=".MainActivity"
     android:background="#1a1f2b">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/loupe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="214dp"
         android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:text="Orelsan"
+        android:layout_marginTop="24dp"
+        android:text="Meydän"
         android:textAlignment="center"
         android:textColor="#a8abb4"
         android:textSize="36sp"
@@ -26,7 +47,7 @@
         android:layout_width="249dp"
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
-        android:text="Dis moi [CLIP OFFICIEL]  "
+        android:text="Synthwave Vibe"
         android:textAlignment="center"
         android:textColor="#a8abb4"
         android:textSize="18sp"
@@ -34,6 +55,20 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="245dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Player"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#DEE0E6"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/view2"
@@ -56,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/orelsan" />
+            android:src="@drawable/cover" />
     </android.support.v7.widget.CardView>
 
 
@@ -140,6 +175,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             app:layout_constraintTop_toTopOf="parent" />
+
 
 
     </android.support.constraint.ConstraintLayout>
